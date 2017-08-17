@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 18 00:05:15 2017
+
+@author: shimizu
+"""
+
+import urllib
+import urlparse
+
+base="http://example.com/html/a.html"
+
+print(urlparse.urljoin(base,"b.html"))
+print(urlparse.urljoin(base, "sub/c.html"))
+print(urlparse.urljoin(base,"../index.html"))
+print(urlparse.urljoin(base,"../img/hoge.png"))
+print(urlparse.urljoin(base,"../css/hoge.css"))
